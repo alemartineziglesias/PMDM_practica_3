@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyZodiac</string>
+    <string name="fecha_nacimiento">Fecha de nacimiento:</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="resultados_edad">Tienes </string>
+    <string name="fin_edad">años</string>
+    <string name="fin_edad_alterno">año</string>
+    <string name="resultados_zodiaco">ERES </string>
+</resources>

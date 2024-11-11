@@ -2,8 +2,21 @@
     <string name="app_name">MyZodiac</string>
     <string name="fecha_nacimiento">Fecha de nacimiento:</string>
     <string name="aceptar">Aceptar</string>
-    <string name="resultados_edad">Tienes </string>
+    <string name="resultados_edad">Tienes</string>
     <string name="fin_edad">años</string>
     <string name="fin_edad_alterno">año</string>
-    <string name="resultados_zodiaco">ERES </string>
+    <string name="resultados_zodiaco">ERES</string>
+    <string name="aries">ARIES</string>
+    <string name="tauro">TAURO</string>
+    <string name="geminis">GÉMINIS</string>
+    <string name="cancer">CÁNCER</string>
+    <string name="leo">LEO</string>
+    <string name="virgo">VIRGO</string>
+    <string name="libra">LIBRA</string>
+    <string name="escorpio">ESCORPIO</string>
+    <string name="sagitario">SAGITARIO</string>
+    <string name="capricornio">CAPRICORNIO</string>
+    <string name="acuario">ACUARIO</string>
+    <string name="piscis">PISCIS</string>
+    <string name="error">Fecha incorrecta</string>
 </resources>

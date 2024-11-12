@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 {
     CalendarView calendario;
     TextView fecha;
+    TextView error;
     Button aceptar;
     String fechaElegida;
     Calendar calendar;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
         calendario = findViewById(R.id.calendarView);
         fecha = findViewById(R.id.textViewFecha);
+        error = findViewById(R.id.textViewError);
         aceptar = findViewById(R.id.buttonAceptar);
         calendar = Calendar.getInstance();
         dateFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
@@ -53,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             {
                 fechaElegida = dia + "/" + (mes + 1) + "/" + anio;
                 fecha.setText(fechaElegida);
+                error.setText("");
             }
         });
         aceptar.setOnClickListener(this);
@@ -79,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(edad < 0)
         {
             String stringError = getString(R.string.error);
-            fecha.setText(stringError);
+            error.setText(stringError);
         }
         else
         {

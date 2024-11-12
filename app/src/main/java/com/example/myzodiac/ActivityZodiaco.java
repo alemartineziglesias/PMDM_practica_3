@@ -1,6 +1,7 @@
 package com.example.myzodiac;
 
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -27,6 +28,7 @@ public class ActivityZodiaco extends AppCompatActivity
         });
         resultadosEdad = findViewById(R.id.textViewEdad);
         resultadosZodiaco = findViewById(R.id.textViewZodiaco);
+        ImageView imageview = findViewById(R.id.imageView);
         Bundle extras = getIntent().getExtras();
         int edad = extras.getInt("edad");
         String signo = extras.getString("signo");
@@ -42,5 +44,53 @@ public class ActivityZodiaco extends AppCompatActivity
         }
         String stringZodiaco = getString(R.string.resultados_zodiaco) + " " + signo;
         resultadosZodiaco.setText(stringZodiaco);
+        if(signo.equals(getString(R.string.aries)))
+        {
+            imageview.setImageResource(R.drawable.aries);
+        }
+        else if(signo.equals(getString(R.string.tauro)))
+        {
+            imageview.setImageResource(R.drawable.tauro);
+        }
+        else if(signo.equals(getString(R.string.geminis)))
+        {
+            imageview.setImageResource(R.drawable.geminis);
+        }
+        else if(signo.equals(getString(R.string.cancer)))
+        {
+            imageview.setImageResource(R.drawable.cancer);
+        }
+        else if(signo.equals(getString(R.string.leo)))
+        {
+            imageview.setImageResource(R.drawable.leo);
+        }
+        else if(signo.equals(getString(R.string.virgo)))
+        {
+            imageview.setImageResource(R.drawable.virgo);
+        }
+        else if(signo.equals(getString(R.string.libra)))
+        {
+            imageview.setImageResource(R.drawable.libra);
+        }
+        else if(signo.equals(getString(R.string.escorpio)))
+        {
+            imageview.setImageResource(R.drawable.escorpio);
+        }
+        else if(signo.equals(getString(R.string.sagitario)))
+        {
+            imageview.setImageResource(R.drawable.sagitario);
+        }
+        else if(signo.equals(getString(R.string.capricornio)))
+        {
+            imageview.setImageResource(R.drawable.capricornio);
+        }
+        else if(signo.equals(getString(R.string.acuario)))
+        {
+            imageview.setImageResource(R.drawable.acuario);
+        }
+        else
+        {
+            imageview.setImageResource(R.drawable.piscis);
+        }
     }
 }
